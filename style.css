@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #272727;  
+
+  
+}
+.wrapper {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.wrapper .buttons {
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.buttons .actButton {
+    padding: 20px;
+    font-size: 80px;
+    border-radius: 50%;
+    outline: none;
+    background:rgb(122, 54, 88) ;
+    border: 2px solid gold;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.356),
+    0px 5px 10px rgba(64, 42, 65, 0.329);
+    transition: .2s step-start;
+}
+
+.buttons .actButton:hover {
+
+    background:rgb(78, 2, 52) ;
+    transition: .2s;
+}
+
+.buttons .actButton:active {
+    transform: scale(0.9);
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.resultContainer #endGameButton {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 50%;
+    outline: none;
+    background:rgb(27, 2, 11) ;
+    border: 2px solid gold;
+    box-shadow: inset 0px 5px 10px rgb(255, 178, 210),
+    0px 0px 5px rgba(0, 0, 0, 0.397);
+    transition: .2s step-start;
+}
+
+.resultContainer #endGameButton:active {
+    transform: scale(0.9);
+}
+
+.plsc {
+    text-align: center;
+    color:#fff;
+    text-shadow: 0px 1px 2px #000;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 40px;
+    font-family:monospace;
+
+}
+
+.hand {
+    text-align: center;
+    color:gold;
+    text-shadow: 0px 1px 1px #000;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 40px;
+    font-family:monospace;
+}
+
+.rslt {
+    color:rgb(146, 53, 114);
+    text-align: center;
+    text-shadow: 0px 2px 1px gold;
+    padding-bottom: 50px;
+    width: 100%;
+    font-size: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        margin-top:30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 550px;
+        max-height: 550px;
+    }
+    .wrapper .buttons {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    .buttons .actButton {
+        top: 0;
+        left: 0;
+        padding: 20px;
+        font-size: 50px;
+    }
+    .plsc {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    .hand {
+        font-size: 50px;
+
+    }
+    .rslt {
+        font-size: 90px;
+        text-transform: uppercase;
+    }
+  }
